@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682532934954" clover="3.2.0">
-  <project timestamp="1682532934954" name="All files">
-    <metrics statements="76" coveredstatements="63" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="5" elements="93" coveredelements="68" complexity="0" loc="76" ncloc="76" packages="5" files="6" classes="6"/>
+<coverage generated="1682575217453" clover="3.2.0">
+  <project timestamp="1682575217453" name="All files">
+    <metrics statements="75" coveredstatements="62" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="5" elements="92" coveredelements="67" complexity="0" loc="75" ncloc="75" packages="5" files="6" classes="6"/>
     <package name="expressjslab-VasyaSuper">
       <metrics statements="28" coveredstatements="23" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="app.js" path="D:\IV_Семестр\JavaScript\expressjslab-VasyaSuper\app.js">
@@ -57,9 +57,9 @@
       </file>
     </package>
     <package name="expressjslab-VasyaSuper.middleware">
-      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="midleware.js" path="D:\IV_Семестр\JavaScript\expressjslab-VasyaSuper\middleware\midleware.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -67,12 +67,11 @@
         <line num="6" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
     </package>
     <package name="expressjslab-VasyaSuper.remake">

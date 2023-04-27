@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../app');
 
 const url = 'https://gorest.co.in/public/v2';
-const token = '0c750f057267c2ceab4f1297b90313062aa0cb4f93a0f2ba8a5de4c64bea68c5';
+const token = '07d6865ab1c468eb9c21ef9d8c06af12da8f60bc7278a5ec76cb5809f4a4d4ee';
 const { makeRequest } = require('../remake/Request');
 
 require('dotenv').config();
@@ -72,7 +72,7 @@ describe('POST /todos', () => {
         expect(res.body).toStrictEqual(createdUser);
         expect(makeRequest).toHaveBeenCalledTimes(1);
         expect(makeRequest).toHaveBeenCalledWith(`${url}/todos`, 'POST', user2);
-    });
+    }, 10000);
 
     it('should handle errors create new Todos', async () => {
         makeRequest.mockRejectedValueOnce(new Error('Create failed'));

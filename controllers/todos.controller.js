@@ -8,7 +8,7 @@ const getTodos = async (req, res) => {
             'GET',
             null,
         );
-        // const data = await response.json();
+
         res.status(201).json(data);
     } catch (error) {
         res.status(404).send('Server Error');
@@ -16,23 +16,18 @@ const getTodos = async (req, res) => {
 };
 
 const createTodos = async (req, res) => {
-    let body = '';
-    req.on('data', chunk => {
-        body += chunk.toString(); // convert Buffer to string
-    });
-    req.on('end', async () => {
-        const { user_id, title, due_on, status } = JSON.parse(body);
+    const { user_id: userId, title, due_on: dueOn, status } = req.body;
     try {
         const data = await makeRequest('https://gorest.co.in/public/v2/todos', 'POST', {
-            user_id,
+            user_id: userId,
             title,
-            due_on,
+            due_on: dueOn,
             status,
         });
         res.status(201).json(data);
     } catch (error) {
         res.status(404).send('Server Error in POST request');
-    }});
+    }
 };
 
 module.exports = {
